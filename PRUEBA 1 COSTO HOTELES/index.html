@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!--HTML 5-->
+<html> <!--Inicio de la página HTML-->
+<head> <!--Se ponen los recursos que se utilizarán (como CSS o JS)-->
+    <meta charset="UTF-8"> <!--Codificación al español-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala los elementos para cualquier dispositvo (celular,ordenador,etc) -->
+    <title>Cálculo costo hotel</title> <!--Titulo de la pestaña-->
+    <link rel="shortcut icon" href="images/icono.png"> <!--icono de la pestaña-->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.4/dist/sweetalert2.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script><!--Biblioteca de funciones que simplifica el usor de JS-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.4/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div class="container"> <!--Ajusta y centra los elementos de la página-->
+        <h1>Hoteles México</h1>
+        <div class="row"> <!--Sistema de rejilla (12 columnas)-->
+            <div class="card hoverable col s12" id="formulario"> <!--Tarjeta que contiene los inputs-->
+                <h3 class="center-align">Cálculo costo hotel</h3>
+                <div class="card-content"> <!--Contenido de la tarjeta-->
+                    <div class="input-field col s6">
+                        <input type="text" id="nombre">
+                        <label for="nombre">Ingrese su nombre</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="number" id="noches" min="1">
+                        <label for="noches">Ingrese noches de estancia</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <select id="tipoHabitacion">
+                            <option value="" disabled selected>Escoge el tipo de habitación</option>
+                            <option value="1">Master Suite</option>
+                            <option value="2">Suite</option>
+                            <option value="3">Familiar</option>
+                            <option value="4">Pareja</option>
+                            <option value="5">Individual</option>
+                        </select>
+                        <label>Escoge el tipo de habitación</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <select id="estado">
+                            <option value="" disabled selected>Escoge el estado</option>
+                            <option value="1">Ciudad de México</option>
+                            <option value="2">Estado de México</option>
+                            <option value="3">Jalisco</option>
+                            <option value="4">Nuevo León</option>
+                        </select>
+                        <label>Escoge el estado</label>
+                    </div>
+                    <center>
+                        <button class="btn waves-effect waves-light blue darken-2" id="calcularBoton">Calcular costo
+                            <i class="material-icons right">attach_money</i>
+                        </button>
+                    </center>
+                </div>
+                <div id="resultado"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

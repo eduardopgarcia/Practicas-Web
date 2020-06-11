@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!--HTML 5-->
+<html> <!--Inicio de la página HTML-->
+<head> <!--Se ponen los recursos que se utilizarán (como CSS o JS)-->
+    <meta charset="UTF-8"> <!--Codificación al español-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala los elementos para cualquier dispositvo (celular,ordenador,etc) -->
+    <title>EddyTube</title> <!--Titulo de la pestaña-->
+    <link rel="shortcut icon" href="images/icono.png"> <!--icono de la pestaña-->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.4/dist/sweetalert2.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script><!--Biblioteca de funciones que simplifica el usor de JS-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.4/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="images/icono.png" width="50px" id="iconoTitulo">
+        <h3 class="center-align white-text">EddyTube</h3>
+        <video class="responsive-video"  id="video" autoplay>
+            <source  src="video/InstantCrush.mp4" type="video/mp4" id="rutaVideo">
+        </video>
+        <div class="row">
+            <div class="buttons">
+                <center>
+                <button class="btn waves-effect waves-light light-blue darken-1" id="play" style="margin: 10px;">
+                    <i class="material-icons prefix" id="iconoImagen1">play_arrow</i>
+                </button>
+                <button class="btn waves-effect waves-light light-blue darken-1" id="pause" style="margin: 10px;">
+                    <i class="material-icons prefix" id="iconoImagen1">pause</i>
+                </button>
+                <button class="btn waves-effect waves-light light-blue darken-1" id="replay" style="margin: 10px;">
+                    <i class="material-icons prefix" id="iconoImagen1">replay</i>
+                </button>
+                <button class="btn waves-effect waves-light light-blue darken-1" id="rewindTen" style="margin: 10px;">
+                    <i class="material-icons prefix" id="iconoImagen1">fast_rewind</i>
+                </button>
+                <button class="btn waves-effect waves-light light-blue darken-1" id="forwardTen" style="margin: 10px;">
+                    <i class="material-icons prefix" id="iconoImagen1">fast_forward</i>
+                </button>
+                <button class="btn waves-effect waves-light light-blue darken-1" id="volumeDown" style="margin: 10px;">
+                    <i class="material-icons prefix" id="iconoImagen1">volume_down</i>
+                </button>
+                <button class="btn waves-effect waves-light light-blue darken-1" id="volumeUp" style="margin: 10px;">
+                    <i class="material-icons prefix" id="iconoImagen1">volume_up</i>
+                </button>
+                <button class="btn waves-effect waves-light light-blue darken-1" id="volumeOff" style="margin: 10px;">
+                    <i class="material-icons prefix" id="iconoImagen1">volume_off</i>
+                </button>
+                <button class="btn waves-effect waves-light light-blue darken-1" id="nextVideo" style="margin: 10px;">
+                    <i class="material-icons prefix" id="iconoImagen1">skip_next</i>
+                </button>
+            </center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
